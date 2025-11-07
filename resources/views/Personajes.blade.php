@@ -185,17 +185,17 @@
         </div>
         
         <nav class="texto">
-            <a href="{{ url('principal') }}" class="boton-menu">
+          <a href="{{ url('/principal') }}" class="boton-menu">
                 <img src="{{ asset('images/Regiones.jpg') }}" alt="Regiones" class="region-text">
                 <span>Regiones</span>
             </a>
             
-            <a href="{{ url('personajes') }}" class="boton-menu">
+           <a href="{{ url('/personajes') }}" class="boton-menu">
                 <img src="{{ asset('images/Personajes.jpg') }}" alt="Personajes" class="region-text">
                 <span>Personajes</span>
             </a>
             
-            <a href="{{ url('inicio-sesion') }}" class="boton-menu">
+           <a href="{{ url('/inicio-sesion') }}" class="boton-menu">
                 <img src="{{ asset('images/Registro.jpg') }}" alt="Registro" class="region-text">
                 <span>Inicio Sesion</span>
             </a>
@@ -205,43 +205,188 @@
     <div class="contenedor-principal">
         <h1 class="titulo-personajes">Personajes</h1>
 
-        @foreach ([
-            'A' => ['albedo', 'amber', 'aino', 'arlecchino', 'alhacen', 'arataki'],
-            'B' => ['barbara', 'bennett', 'beidou', 'baizhu'],
-            'C' => ['candace', 'collei', 'citlali', 'chasca', 'clorinde', 'chiori', 'chevreuse', 'charlotte', 'cyno'],
-            'D' => ['diluc', 'diona', 'dehya', 'dahlia', 'dori'],
-            'E' => ['eula', 'escoffier', 'emilie'],
-            'F' => ['fishl', 'faruzan', 'flins', 'furina', 'freminet'],
-            'G' => ['ganyu', 'gorou', 'gaming'],
-            'H' => ['hutao'],
-            'I' => ['ifa', 'ineffa', 'iansan'],
-            'J' => ['jean'],
-            'K' => ['kachina', 'ayaka', 'ayato', 'kaveh', 'kazuha', 'keching', 'kinich', 'kirara', 'kuki', 'kujou', 'klee'],
-            'L' => ['laila', 'lan', 'lauma', 'lisa', 'lynette', 'lyney'],
-            'M' => ['mavuika', 'mika', 'mona', 'mualani'],
-            'N' => ['nahida', 'navia', 'neuvillette', 'ningguang', 'nilou'],
-            'O' => ['ororon'],
-            'Q' => ['qiqi'],
-            'R' => ['razor', 'rosaria'],
-            'S' => ['sacarosa', 'kokomi', 'sayu', 'shenhe', 'shogun', 'skirk', 'sigewine', 'sethos'],
-            'T' => ['tartaglia', 'thoma', 'trotamundos', 'tignari'],
-            'V' => ['venti', 'varesa'],
-            'W' => ['wriothesley'],
-            'X' => ['xingqiu', 'xiao', 'xiangling', 'xilonen', 'xianyun', 'xinyan'],
-            'Y' => ['yae', 'yelan', 'yoimiya', 'yun'],
-            'Z' => ['zhongli']
-        ] as $letra => $personajes)
-            <h2 class="letra-divisor">{{ $letra }}</h2>
-            <div class="personajes-grid">
-                @foreach ($personajes as $nombre)
-                    <a href="{{ url('Proximamente') }}" class="boton-personaje">
-                        <img src="{{ asset('images/' . $nombre . '.jpg') }}" alt="{{ ucfirst($nombre) }}">
-                        <span>{{ ucfirst($nombre) }}</span>
-                    </a>
-                @endforeach
-            </div>
-        @endforeach
-    </div>
+        {{-- SECCIONES DE PERSONAJES --}}
+        {{-- A --}}
+        <h2 class="letra-divisor">A</h2>
+        <div class="personajes-grid">
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/albedo.jpg') }}"><span>Albedo</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/amber.jpg') }}"><span>Amber</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/aino.jpg') }}"><span>Aino</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/arlecchino.jpg') }}"><span>Arlecchino</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/alhacen.jpg') }}"><span>Alhacen</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/arataki.jpg') }}"><span>Arataki Itto</span></a>
+        </div>
+
+        {{-- B --}}
+        <h2 class="letra-divisor">B</h2>
+        <div class="personajes-grid">
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/barbara.jpg') }}"><span>Barbara</span></a>
+            <a href="{{ url('bennett') }}" class="boton-personaje"><img src="{{ asset('images/bennett.jpg') }}"><span>Bennett</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/beidou.jpg') }}"><span>Beidou</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/baizhu.jpg') }}"><span>Baizhu</span></a>
+        </div>
+
+        {{-- C --}}
+<h2 class="letra-divisor">C</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/chongyun.jpg') }}"><span>Chongyun</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/chiori.jpg') }}"><span>Chiori</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/charlotte.jpg') }}"><span>Charlotte</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/candace.jpg') }}"><span>Candace</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/collei.jpg') }}"><span>Collei</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/chongyun.jpg') }}"><span>Chongyun</span></a>
+</div>
+
+{{-- D --}}
+<h2 class="letra-divisor">D</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/diluc.jpg') }}"><span>Diluc</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/dehya.jpg') }}"><span>Dehya</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/diona.jpg') }}"><span>Diona</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/dori.jpg') }}"><span>Dori</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/daona.jpg') }}"><span>Daona</span></a>
+</div>
+
+{{-- E --}}
+<h2 class="letra-divisor">E</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/eula.jpg') }}"><span>Eula</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/emo.jpg') }}"><span>Emo</span></a>
+</div>
+
+{{-- F --}}
+<h2 class="letra-divisor">F</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/fischl.jpg') }}"><span>Fischl</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/furina.jpg') }}"><span>Furina</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/faruzan.jpg') }}"><span>Faruzan</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/freminet.jpg') }}"><span>Freminet</span></a>
+</div>
+
+{{-- G --}}
+<h2 class="letra-divisor">G</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/ganyu.jpg') }}"><span>Ganyu</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/gorou.jpg') }}"><span>Gorou</span></a>
+</div>
+
+{{-- H --}}
+<h2 class="letra-divisor">H</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/hutao.jpg') }}"><span>Hu Tao</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/heizou.jpg') }}"><span>Heizou</span></a>
+</div>
+
+{{-- I --}}
+<h2 class="letra-divisor">I</h2>
+<div class="personajes-grid">
+    <a href="{{ url('ifa') }}" class="boton-personaje"><img src="{{ asset('images/ifa.jpg') }}"><span>Ifa</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/ineffa.jpg') }}"><span>Ineffa</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/iansan.jpg') }}"><span>Iansan</span></a>
+</div>
+
+
+        {{-- L --}}
+        <h2 class="letra-divisor">L</h2>
+        <div class="personajes-grid">
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/laila.jpg') }}"><span>Laila</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/lan.jpg') }}"><span>Lan Yan</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/lauma.jpg') }}"><span>Lauma</span></a>
+            <a href="{{ url('lisa') }}" class="boton-personaje"><img src="{{ asset('images/lisa.jpg') }}"><span>Lisa</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/lynette.jpg') }}"><span>Lynette</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/lyney.jpg') }}"><span>Lyney</span></a>
+        </div>
+
+        {{-- N --}}
+<h2 class="letra-divisor">N</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/nahida.jpg') }}"><span>Nahida</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/navia.jpg') }}"><span>Navia</span></a>
+    <a href="{{ url('Neuvillette') }}" class="boton-personaje"><img src="{{ asset('images/neuvillette.jpg') }}"><span>Neuvillette</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/ningguang.jpg') }}"><span>Ningguang</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/nilou.jpg') }}"><span>Nilou</span></a>
+</div>
+
+{{-- O --}}
+<h2 class="letra-divisor">O</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/ororon.jpg') }}"><span>Ororon</span></a>
+</div>
+
+{{-- P --}}
+<h2 class="letra-divisor">P</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/paimon.jpg') }}"><span>Paimon</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/paella.jpg') }}"><span>Paella</span></a>
+</div>
+
+{{-- Q --}}
+<h2 class="letra-divisor">Q</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/qiqi.jpg') }}"><span>Qiqi</span></a>
+</div>
+
+{{-- R --}}
+<h2 class="letra-divisor">R</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/razor.jpg') }}"><span>Razor</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/rosaria.jpg') }}"><span>Rosaria</span></a>
+</div>
+
+{{-- S --}}
+<h2 class="letra-divisor">S</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/sayu.jpg') }}"><span>Sayu</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/sucrose.jpg') }}"><span>Sucrose</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/sigewinne.jpg') }}"><span>Sigewinne</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/shenhe.jpg') }}"><span>Shenhe</span></a>
+</div>
+
+{{-- T --}}
+<h2 class="letra-divisor">T</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/tartaglia.jpg') }}"><span>Tartaglia</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/thonar.jpg') }}"><span>Thonar</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/thoma.jpg') }}"><span>Thoma</span></a>
+</div>
+
+{{-- V --}}
+<h2 class="letra-divisor">V</h2>
+<div class="personajes-grid">
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/venti.jpg') }}"><span>Venti</span></a>
+    <a href="{{ url('Proximamente') }}" class="boton-personaje"><img src="{{ asset('images/vistra.jpg') }}"><span>Vistra</span></a>
+</div>
+
+{{-- W --}}
+<h2 class="letra-divisor">W</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/wriothesley.jpg') }}"><span>Wriothesley</span></a>
+</div>
+
+{{-- X --}}
+<h2 class="letra-divisor">X</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/xiao.jpg') }}"><span>Xiao</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/xinyan.jpg') }}"><span>Xinyan</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/xingqiu.jpg') }}"><span>Xingqiu</span></a>
+</div>
+
+{{-- Y --}}
+<h2 class="letra-divisor">Y</h2>
+<div class="personajes-grid">
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/yaemiko.jpg') }}"><span>Yae Miko</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/yanfei.jpg') }}"><span>Yanfei</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/yelan.jpg') }}"><span>Yelan</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/yoimiya.jpg') }}"><span>Yoimiya</span></a>
+    <a href="{{ url('proximamente') }}" class="boton-personaje"><img src="{{ asset('images/yaoyao.jpg') }}"><span>Yaoyao</span></a>
+</div>
+
+{{-- Z --}}
+<h2 class="letra-divisor">Z</h2>
+<div class="personajes-grid">
+    <a href="{{ url('zhongli') }}" class="boton-personaje"><img src="{{ asset('images/zhongli.jpg') }}"><span>Zhongli</span></a>
+</div>
+    
 
     <footer>
         <a href="{{ url('principal') }}">← Volver al Inicio</a>
@@ -249,4 +394,3 @@
 
 </body>
 </html>
-

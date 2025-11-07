@@ -9,7 +9,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            background-image: url('{{ asset('images/FondoMenu.jpg') }}');
+            background-image: url('{{ asset("images/FondoMenu.jpg") }}');
             background-size: cover;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -141,12 +141,12 @@
                 <span>Regiones</span>
             </a>
             
-            <a href="{{ route('personajes') }}" class="boton-menu">
+            <a href="{{ url('/personajes') }}" class="boton-menu">
                 <img src="{{ asset('images/Personajes.jpg') }}" alt="Personajes" class="region-text">
                 <span>Personajes</span>
             </a>
             
-            <a href="{{ route('inicioSesion') }}" class="boton-menu">
+            <a href="{{ url('/inicio-sesion') }}" class="boton-menu">
                 <img src="{{ asset('images/Registro.jpg') }}" alt="Registro" class="region-text">
                 <span>Inicio Sesión</span>
             </a>
@@ -175,13 +175,13 @@
     <footer>
         <h2 style="text-align:center; color:#333; margin-bottom:30px; font-size:36px;">Regiones</h2>
         <div class="regiones-grid">
-            <a href="{{ route('mondstadt') }}" class="boton-region"><img src="{{ asset('images/mondstadt.jpg') }}" alt="Mondstadt"><span>Mondstadt</span></a>
-            <a href="{{ route('liyue') }}" class="boton-region"><img src="{{ asset('images/liyue.jpg') }}" alt="Liyue"><span>Liyue</span></a>
-            <a href="{{ route('inazuma') }}" class="boton-region"><img src="{{ asset('images/inazuma.jpg') }}" alt="Inazuma"><span>Inazuma</span></a>
-            <a href="{{ route('sumeru') }}" class="boton-region"><img src="{{ asset('images/sumeru.jpg') }}" alt="Sumeru"><span>Sumeru</span></a>
-            <a href="{{ route('fontaine') }}" class="boton-region"><img src="{{ asset('images/fontaine.jpg') }}" alt="Fontaine"><span>Fontaine</span></a>
-            <a href="{{ route('natlan') }}" class="boton-region"><img src="{{ asset('images/natlan.jpg') }}" alt="Natlan"><span>Natlan</span></a>
-            <a href="{{ route('proximamente') }}" class="boton-region"><img src="{{ asset('images/proximamente.jpg') }}" alt="Proximamente"><span>Próximamente</span></a>
+            <a href="{{ url('mondstadt') }}" class="boton-region"><img src="{{ asset('images/mondstadt.jpg') }}" alt="Mondstadt"><span>Mondstadt</span></a>
+            <a href="{{ url('liyue') }}" class="boton-region"><img src="{{ asset('images/liyue.jpg') }}" alt="Liyue"><span>Liyue</span></a>
+            <a href="{{ url('inazuma') }}" class="boton-region"><img src="{{ asset('images/inazuma.jpg') }}" alt="Inazuma"><span>Inazuma</span></a>
+            <a href="{{ url('sumeru') }}" class="boton-region"><img src="{{ asset('images/sumeru.jpg') }}" alt="Sumeru"><span>Sumeru</span></a>
+            <a href="{{ url('fontaine') }}" class="boton-region"><img src="{{ asset('images/fontaine.jpg') }}" alt="Fontaine"><span>Fontaine</span></a>
+            <a href="{{ url('natlan') }}" class="boton-region"><img src="{{ asset('images/natlan.jpg') }}" alt="Natlan"><span>Natlan</span></a>
+            <a href="{{ url('proximamente') }}" class="boton-region"><img src="{{ asset('images/proximamente.jpg') }}" alt="Proximamente"><span>Próximamente</span></a>
         </div>
     </footer>
 

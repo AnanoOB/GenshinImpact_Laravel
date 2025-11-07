@@ -12,7 +12,7 @@
         }
 
         body {
-            background-image: url('{{ asset('images/proximamente/FondoMenu.jpg') }}');
+            background-image: url('{{ asset('images/FondoMenu.jpg') }}');
             background-size: cover;
             background-attachment: fixed;
             font-family: 'Times New Roman', Times, serif;
@@ -202,22 +202,22 @@
     
     <header>
         <div class="logo-container">
-            <img src="{{ asset('images/proximamente/LogoPagina.jpg') }}" alt="Logo" class="logo-text">
+            <img src="{{ asset('images/LogoPagina.jpg') }}" alt="Logo" class="logo-text">
         </div>
         
         <nav class="texto">
-            <a href="{{ route('principal') }}" class="boton-menu">
-                <img src="{{ asset('images/proximamente/Regiones.jpg') }}" alt="Regiones" class="region-text">
+            <a href="{{ url('principal') }}" class="boton-menu">
+                <img src="{{ asset('images/Regiones.jpg') }}" alt="Regiones" class="region-text">
                 <span>Regiones</span>
             </a>
             
-            <a href="{{ route('personajes') }}" class="boton-menu">
-                <img src="{{ asset('images/proximamente/Personajes.jpg') }}" alt="Personajes" class="region-text">
+            <a href="{{ url('personajes') }}" class="boton-menu">
+                <img src="{{ asset('images/Personajes.jpg') }}" alt="Personajes" class="region-text">
                 <span>Personajes</span>
             </a>
             
-            <a href="{{ route('inicio') }}" class="boton-menu">
-                <img src="{{ asset('images/proximamente/Registro.jpg') }}" alt="Registro" class="region-text">
+            <a href="{{ url('inicio') }}" class="boton-menu">
+                <img src="{{ asset('images/Registro.jpg') }}" alt="Registro" class="region-text">
                 <span>Inicio Sesión</span>
             </a>
         </nav>
@@ -244,7 +244,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <a href="{{ route('principal') }}">← Volver al Inicio</a>
+        <a href="{{ url('principal') }}">← Volver al Inicio</a>
     </footer>
 
 </body>

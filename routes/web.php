@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Página Home - Principal
-Route::get('/', fn() => view('Principal'));
+Route::get('/principal', fn() => view('Principal'));
 
 //Páginas generales
 Route::get('/personajes', fn() => view('Personajes'));
@@ -23,7 +23,11 @@ Route::get('/mondstadt', fn() => view('Mondstadt'));
 Route::get('/liyue', fn() => view('Liyue'));
 Route::get('/inazuma', fn() => view('Inazuma'));
 Route::get('/sumeru', fn() => view('Sumeru'));
+Route::get('/fontaine', fn() => view('Fountaine'));
 Route::get('/natlan', fn() => view('Natlan'));
+
+// 👉 NUEVA RUTA para cuando se use url('Proximamente')
+Route::get('/proximamente', fn() => view('Proximamente'));
 
 //Personajes con vista propia (nuestros favs jsjs)
 $personajes = [

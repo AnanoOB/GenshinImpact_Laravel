@@ -243,17 +243,17 @@
         </div>
         
         <nav class="texto">
-            <a href="{{ route('principal') }}" class="boton-menu">
+            <a href="{{ url('principal') }}" class="boton-menu">
                 <img src="{{ asset('images/Regiones.jpg') }}" alt="Regiones" class="region-text">
                 <span>Regiones</span>
             </a>
             
-            <a href="{{ route('personajes') }}" class="boton-menu">
+            <a href="{{ url('personajes') }}" class="boton-menu">
                 <img src="{{ asset('images/Personajes.jpg') }}" alt="Personajes" class="region-text">
                 <span>Personajes</span>
             </a>
             
-            <a href="{{ route('registro') }}" class="boton-menu">
+            <a href="{{ url('registro') }}" class="boton-menu">
                 <img src="{{ asset('images/Registro.jpg') }}" alt="Registro" class="region-text">
                 <span>Inicio Sesion</span>
             </a>
@@ -298,7 +298,7 @@
     </div>
 
     <footer>
-        <a href="{{ route('principal') }}">← Volver al Inicio</a>
+        <a href="{{ url('principal') }}">← Volver al Inicio</a>
     </footer>
 
     <script>
